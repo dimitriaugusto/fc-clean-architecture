@@ -1,0 +1,12 @@
+Caro(a) revisor(a),
+O teste que acumula 2 erros em Product está na linha 28 de product.spec.ts.
+Muito obrigado,
+Dimitri
+
+---
+Caro revisor,
+Os desafios "Notification Pattern em Products" e
+"Validação de Products" foram solucionados com o mesmo
+commit, por simplicidade e produtividade.
+Muito obrigado,
+Dimitri

@@ -19,6 +19,19 @@ describe("Product unit tests", () => {
     }).toThrowError("Price must be greater than zero");
   });
 
+  it("should throw error when price is undefined", () => {
+    expect(() => {
+      const product = new Product("123", "Name", undefined);
+    }).toThrowError("Price is required");
+  });
+
+  it("should throw error and accumulate 2 errors ", () => {
+    expect(() => {
+      const product = new Product("123", "", -1);
+    }).toThrowError("product: Name is required,product: Price must be greater than zero");
+  });
+
+
   it("should change name", () => {
     const product = new Product("123", "Product 1", 100);
     product.changeName("Product 2");
